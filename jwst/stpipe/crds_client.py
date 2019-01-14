@@ -98,7 +98,7 @@ def _get_refpaths(data_dict, reference_file_types):
         return {}
     try: # catch exceptions to truncate expected tracebacks
         with crds_cache_locking.get_cache_lock():
-            bestrefs = crds.getreferences(data_dict, reftypes=reference_file_types, observatory="jwst")
+            bestrefs = crds.getreferences(data_dict, reftypes=reference_file_types, observatory="tmt")
     except crds.CrdsBadRulesError as exc:
         raise crds.CrdsBadRulesError(str(exc))
     except crds.CrdsBadReferenceError as exc:
