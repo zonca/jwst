@@ -72,11 +72,15 @@ from .wcs_ref_models import (DistortionModel, DistortionMRSModel, SpecwcsModel,
     WaveCorrModel)
 from .wfssbkg import WfssBkgModel
 from .util import open
+from .iris import IRISImageModel
+from .tmt_ramp import TMTRampModel
 
 
 
 __all__ = [
     'open',
+    'IRISImageModel',
+    'TMTRampModel',
     'DataModel',
     'AmiLgModel', 'AsnModel',
     'BarshadowModel', 'CameraModel', 'CollimatorModel',
